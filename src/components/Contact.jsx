@@ -34,10 +34,10 @@ const Contact = () => {
       </main>
       <div class="social-icons">
 
-        <a href="https://www.facebook.com/saquib.parvez.1" target="_blank" class="fb"><img src={fb} /></a>
-        <a href="https://www.linkedin.com/in/suraj-kumar-yadav-63a880246/" target="_blank" class="twitter"><img src={li} /></a>
-        <a href="https://www.instagram.com/yadavanshi_suraj/" target="_blank" class="insta"><img src={insta} /></a>
-        <a href="https://github.com/surajkumar9693" target="_blank" class="github"><img src={github} /></a>
+        <a href="https://www.facebook.com/saquib.parvez.1" target="noopener" class="fb"><img src={fb} /></a>
+        <a href="https://www.linkedin.com/in/suraj-kumar-yadav-63a880246/" target="noopener" class="twitter"><img src={li} /></a>
+        <a href="https://www.instagram.com/yadavanshi_suraj/" target="noopener" class="insta"><img src={insta} /></a>
+        <a href="https://github.com/surajkumar9693" target="noopener" class="github"><img src={github} /></a>
       </div>
     </div>
   );
