@@ -27,7 +27,6 @@ function Header() {
   return (
     <div className={color ? "Header Header-bg" : "Header"}>
       <ul>
-        <li id='title'>Suraj Portfolio</li>
         <li>
           <Link to="/">Home</Link>
         </li>
