@@ -1,9 +1,12 @@
 import React from "react";
 import "./Contact.scss"
-import fb from "../assets/fb.png"
-import li from "../assets/li.png"
-import insta from "../assets/insta.png"
-import github from "../assets/github.png"
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillFacebook
+} from "react-icons/ai";
+
 const Contact = () => {
   return (
     <div className="contact">
@@ -34,11 +37,18 @@ const Contact = () => {
       </main>
       <div class="social-icons">
 
-        <a href="https://www.facebook.com/saquib.parvez.1" target="noopener" class="fb"><img src={fb} /></a>
-        <a href="https://www.linkedin.com/in/suraj-kumar-yadav-63a880246/" target="noopener" class="twitter"><img src={li} /></a>
-        <a href="https://www.instagram.com/yadavanshi_suraj/" target="noopener" class="insta"><img src={insta} /></a>
-        <a href="https://github.com/surajkumar9693" target="noopener" class="github"><img src={github} /></a>
-      </div>
+      <a href="https://www.facebook.com/suraj.yadavanshi.7568" target={"blank"}>
+            <AiFillFacebook />
+          </a>
+          <a href="https://www.instagram.com/yadavanshi_suraj/" target={"blank"}>
+            <AiFillInstagram />
+          </a>
+          <a href="https://www.linkedin.com/in/suraj-kumar-yadav-63a880246/" target={"blank"}>
+            <AiFillLinkedin />
+          </a>
+          <a href="https://github.com/surajkumar9693" target={"blank"}>
+            <AiFillGithub />
+          </a> </div>
     </div>
   );
 };

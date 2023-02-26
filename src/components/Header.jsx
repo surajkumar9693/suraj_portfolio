@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Link } from 'react-router-dom';
 import './Header.scss'
 import resume from "../assets/resume.pdf"
+import { FaBars, FaTimes } from "react-icons/fa"
 
 function Header() {
   function mouseHover() {
@@ -10,8 +11,21 @@ function Header() {
   function leave() {
     window.document.getElementById("resume").innerHTML = "Resume"
   }
+  const [click, setClick] = useState(false)
+  const handleClick = () => {
+      setClick(!click)
+  }
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+      if (window.scrollY >= 100) {
+          setColor(true)
+      } else {
+          setColor(false)
+      }
+  };
+  window.addEventListener("scroll", changeColor)
   return (
-    <nav>
+    <div className={color ? "Header Header-bg" : "Header"}>
       <ul>
         <li id='title'>Suraj Portfolio</li>
         <li>
@@ -32,8 +46,10 @@ function Header() {
         <li ><a id='resume' onMouseLeave={leave} onMouseOver={mouseHover} href={resume} download="Resume_Suraj_Kumar">Resume</a>
         </li>
       </ul>
-
-    </nav>
+      <div className='hamburger' onClick={handleClick}>
+                {click ? (<FaTimes size={20} style={{ color: "#fff" }} />) : (<FaBars size={20} style={{ color: "#fff" }} />)}
+            </div>
+    </div>
 
   )
 }
