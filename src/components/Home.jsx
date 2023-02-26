@@ -1,5 +1,5 @@
 import './Home.scss'
-import React, { useState } from 'react';
+import React from 'react';
 import Typewriter from "typewriter-effect";
 import { useNavigate } from "react-router-dom";
 import vg from "../assets/suraj.png"
@@ -48,10 +48,10 @@ function Home() {
     <div class="about">Follow me on</div>
     <div class="social-icons">
      
-      <a href="https://www.facebook.com/suraj.yadavanshi.7568" target="_blank" class="fb"><img src={fb}/></a>
-      <a href="https://www.linkedin.com/in/suraj-kumar-yadav-63a880246/" target="_blank" class="twitter"><img src={li}/></a>
-      <a href="https://www.instagram.com/yadavanshi_suraj/" target="_blank" class="insta"><img src={insta}/></a>
-      <a href="https://github.com/surajkumar9693" target="_blank" class="github"><img src={github}/></a>
+      <a href="https://www.facebook.com/suraj.yadavanshi.7568"  class="fb"><img src={fb}/></a>
+      <a href="https://www.linkedin.com/in/suraj-kumar-yadav-63a880246/"  class="twitter"><img src={li}/></a>
+      <a href="https://www.instagram.com/yadavanshi_suraj/"  class="insta"><img src={insta}/></a>
+      <a href="https://github.com/surajkumar9693"  class="github"><img src={github}/></a>
     </div>
     <div class="buttons">
       <button id="btnmsg"  class="msg" onClick={()=>{navigate('/Contact')}}>Message</button>
